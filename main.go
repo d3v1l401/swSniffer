@@ -99,7 +99,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Only capturing TCP port 80 packets.")
 
 	// Start processing packets
 	packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
